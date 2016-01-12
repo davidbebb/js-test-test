@@ -25,13 +25,17 @@ build:
     # A step that executes `npm install` command
     - npm-install
 
-    code: |
-      selenium-standalone install
-      selenium-standalone start
+ - script:
+        name: echo install selenium
+        code: |
+          selenium-standalone install
+          selenium-standalone start
 
     # A step that executes `npm test` command
-    code: |
-      node test.js
+     - script:
+        name: echo run selenium tests
+        code: |
+          node test.js
     # A custom script step, name value is used in the UI
     # and the code value contains the command that get executed
     - script:
