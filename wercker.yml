@@ -27,7 +27,8 @@ build:
     - script:
         name: echo install selenium
         code: |
-          npm install -g
+          npm install
+          npm install -g selenium-standalone@latest
           selenium-standalone install
           selenium-standalone start
 
