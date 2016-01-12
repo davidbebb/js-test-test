@@ -32,7 +32,7 @@ build:
           selenium-standalone start
 
     # A step that executes `npm test` command
-     - script:
+    - script:
         name: echo run selenium tests
         code: |
           node test.js
@@ -43,3 +43,6 @@ build:
         code: |
           echo "node version $(node -v) running"
           echo "npm version $(npm -v) running"
+
+
+      
